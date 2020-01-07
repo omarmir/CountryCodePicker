@@ -126,6 +126,10 @@ class _CountryCodePickerState extends State<CountryCodePicker> {
                 style: widget.textStyle ?? Theme.of(context).textTheme.button,
               ),
             ),
+            Flexible(
+              fit: widget.alignLeft ? FlexFit.tight : FlexFit.loose,
+              child: Icon(Icons.arrow_drop_down, color: Theme.of(context).textTheme.button.color)
+            ),
           ],
         ),
       );
